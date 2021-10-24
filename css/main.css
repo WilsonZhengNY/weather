@@ -11,10 +11,8 @@ body {
  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
-.container {
- margin-left: auto;
- margin-right: auto;
- top: 100px;
+.data {
+ text-align: center;
 }
 
 h1 {
