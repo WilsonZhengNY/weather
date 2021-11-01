@@ -14,7 +14,10 @@
       <div class="container">
         <div class="row">
           <div class="data">
-            <h1>{{ fiveDay.city_name }}</h1>
+            Enter a city here: <input type="text" placeholder="Search..." class="form-control" #myInput
+                                      (keydown.enter)>
+            <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+            <h1>{{ city_name }}</h1>
             <h2>5-day forecast</h2>
             <div class="forecast" ng-repeat="day in fiveDay.days">
               <div class="day row">
