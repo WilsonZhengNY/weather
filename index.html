@@ -14,9 +14,11 @@
       <div class="container">
         <div class="row">
           <div class="data">
-            Enter a city here: <input type="text" placeholder="Search..." class="form-control" #myInput
-                                      (keydown.enter)>
-            <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+                <form action="javascript:void(0)">
+                  Enter city name: <input type="text" ng-model="cityname" /><br>
+                <br>
+                  <button ng-click="getData(user)"> ENTER </button>
+                </form>
             <h1>{{ city_name }}</h1>
             <h2>5-day forecast</h2>
             <div class="forecast" ng-repeat="day in fiveDay.days">
