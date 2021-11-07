@@ -17,9 +17,9 @@
                 <form action="javascript:void(0)">
                   Enter city name: <input type="text" ng-model="cityname" /><br>
                 <br>
-                  <button ng-click="getData(user)"> ENTER </button>
+                  <button ng-click="getData(cityname)"> ENTER </button>
                 </form>
-            <h1>{{ userData.cityname }}</h1>
+            <h1>{{ userData }}</h1>
             <h2>5-day forecast</h2>
             <div class="forecast" ng-repeat="day in fiveDay.days">
               <div class="day row">
