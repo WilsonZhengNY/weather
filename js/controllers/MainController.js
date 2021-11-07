@@ -2,11 +2,10 @@ app.controller('MainController', ['$scope', 'forecast', function($scope, forecas
   forecast.success(function(data) {
     $scope.fiveDay = data;
   });
-}]);
-
-app.controller('MainController', function($scope) {
+  
   $scope.userData = '';
   $scope.getData = function(user) {
     $scope.userData = angular.copy(user);
-  };
-});
+  };  
+}]);
+
